@@ -19,7 +19,17 @@ async def on_message(message):
     if message.author == client.user:
         return
     if message.content == 'fard':
-        await message.channel.send('fard sex')
+        if message.author.id == "mpKYeqQd":
+            await message.channel.send('im not talking to you neo')
+        else:
+            await message.channel.send('fard sex')
+        if message.author.id == "VdxE582m":
+            await message.channel.send('owner fard sex')
+            print('user is a developer')
+        else:
+            print('user isnt a developer')
+        if message.author.id == "d8LQQykd":
+            await message.channel.send('fard sex (hi lapi!!!!!)')
     if message.content == 'FARD':
         await message.channel.send('BRAAAAP LOUD FARD!!!! LOUD FARD SEX!!!!!!!!!')
     if message.content == 'pyfard?':
@@ -33,6 +43,7 @@ async def on_message(message):
     if message.content == 'fard, give me your wisdom':
         fortuneOut = subprocess.getoutput("fortune")
         await message.channel.send(fortuneOut)
+        print(fortuneOut)
     if message.content == 'fard, test line breaks':
         await message.channel.send("line one\n line two")
 client.run(token)
